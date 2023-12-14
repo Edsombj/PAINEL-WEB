@@ -23,7 +23,8 @@ BOTFREE () {
     wget https://raw.githubusercontent.com/JeanRocha91x/SSHPLUS/main/iniciar.sh -O iniciar.sh; chmod +x iniciar.sh; ./iniciar.sh
 }
 ATTSSL () {
-    apt install wget -y; wget --no-check-certificate https://www.dropbox.com/s/v2hvhv8z86zlsqd/ssl.sh; chmod +x ssl.sh; ./ssl.sh
+    apt install wget -y; wget --no-check-certificate 
+    https://www.dropbox.com/scl/fi/osq3cy9svt1u4yr5ddap7/ssl.sh?rlkey=dl66ewd4p1jk1a0nu3q9w99t5&dl=0; chmod +x ssl.sh; ./ssl.sh
 }
 MENU () {
     clear
