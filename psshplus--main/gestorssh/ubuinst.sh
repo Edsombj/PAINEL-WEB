@@ -60,7 +60,7 @@ mv /tmp/pass /var/www/html/pages/system/pass.php
 }
 function inst_db { 
 cd || exit
-wget https://github.com/JeanRocha91x/psshplus-/raw/main/gestorssh/bdgestorssh.sql > /dev/null 2>&1
+wget https://github.com/Edsombj/PAINEL-WEB/blob/main/psshplus--main/gestorssh/bdgestorssh.sql > /dev/null 2>&1
 sleep 1
 if [[ -e "$HOME/bdgestorssh.sql" ]]; then
     mysql -h localhost -u root -p"$pwdroot" --default_character_set utf8 sshplus < bdgestorssh.sql
@@ -105,8 +105,8 @@ function fun_swap {
 }
 function tst_bkp {
 cd /bin || exit
-wget https://github.com/JeanRocha91x/psshplus-/raw/main/gestorssh/userteste.sh
-wget https://github.com/JeanRocha91x/psshplus-/raw/main/gestorssh/autobackup.sh
+wget https://github.com/Edsombj/PAINEL-WEB/blob/main/psshplus--main/gestorssh/userteste.sh
+wget https://github.com/Edsombj/PAINEL-WEB/blob/main/psshplus--main/gestorssh/autobackup.sh
 chmod 777 /bin/userteste.sh > /dev/null 2>&1
 chmod 777 /bin/autobackup.sh > /dev/null 2>&1
 mkdir /root/backupsql > /dev/null 2>&1
